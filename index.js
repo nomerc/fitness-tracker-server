@@ -33,7 +33,7 @@ app.use(
 
 // Load Routes
 const workoutsRoute = require("./routes/workouts");
-const exerciseNamesRoute = require("./routes/ExerciseNames");
+const exerciseNamesRoute = require("./routes/exerciseNames");
 const usersRoute = require("./routes/users");
 
 // Use Routes
