@@ -31,8 +31,11 @@ exports.logIn = (req, res) => {
 };
 
 exports.signUp = (req, res) => {
-  let body = req.body;
-  let newUser = new User(body);
+  let name = req.body.userName;
+  let email = req.body.email;
+  let password = req.body.password;
+
+  let newUser = new User({ name, email, password });
 
   newUser
     .save()
